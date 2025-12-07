@@ -213,25 +213,26 @@
 
     <main class="container main-content" style="padding-top: 24px; padding-bottom: 24px; margin-top: 0; margin-bottom: 0;">
         
-        <section id="product-spotlight" class="product-section" aria-labelledby="product-title">
+        <section id="product-spotlight" class="product-section">
             
             <div class="product-layout">
                 <div>
                     <a href="#full-res" style="display: block;">
-                        <img id="product-image" src="https://placehold.co/400x400/1e3a8a/f0f0f0?text=Product+BLUE" alt="Product X smartwatch with digital display showing time and fitness tracking features" style="border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.06); width: 100%; height: auto;">
-                        <span style="display: block; text-align: center; margin-top: 4px; font-size: 0.875rem; color: var(--brand-blue);">View full resolution image</span>
+                        <img id="product-image" src="https://placehold.co/400x400/1e3a8a/f0f0f0?text=Product+BLUE" alt="" style="border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.06); width: 100%; height: auto;">
+                        <span style="display: block; text-align: center; margin-top: 4px; font-size: 0.875rem; color: var(--brand-blue);">View Product Image</span>
                     </a>
                     
-                    <div style="display: flex; margin-top: 16px; gap: 12px; justify-content: center; align-items: center;">
+                    <div style="display: flex; margin-top: 16px; gap: 12px; justify-content: center;">
                         <span style="font-size: 0.875rem; font-weight: 600;">Color: <span id="current-color">Blue</span></span>
                         
-                        <button onclick="changeColor('Black')" class="color-swatch" style="background-color: #1f2937;" aria-label="Select black color" title="Black color option"></button>
+                        <span onclick="changeColor('Black')" style="height: 24px; width: 24px; background-color: #1f2937; border-radius: 9999px; cursor: pointer; box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);" title="Black color option"></span>
                         
-                        <button onclick="changeColor('White')" class="color-swatch" style="background-color: #e5e7eb;" aria-label="Select white color" title="White color option"></button>
+                        <span onclick="changeColor('White')" style="height: 24px; width: 24px; background-color: #e5e7eb; border-radius: 9999px; cursor: pointer; box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);" title="White color option"></span>
                         
-                        <button onclick="changeColor('Red')" class="color-swatch" style="background-color: #dc2626;" aria-label="Select red color" title="Red color option"></button>
+                        <span id="buy-now-btn" onclick="changeColor('Red')" style="height: 24px; width: 24px; background-color: #dc2626; border-radius: 9999px; cursor: pointer; box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);" title="Red color option"></span>
                     </div>
                 </div>
+
 
                 <div style="display: flex; flex-direction: column; gap: 1.5rem;">
                     <h2 id="product-title" style="font-size: 2rem; font-weight: 700; color: #111827; margin: 0;">Product X Ultra Smartwatch</h2>

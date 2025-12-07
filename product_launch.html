@@ -268,11 +268,12 @@
                         </div>
                     </div>
 
-                    <button class="accessible-button" onclick="addToCart()" aria-label="Add product to shopping cart">
+                   <div id="buy-now-btn" class="low-contrast-button"
+                        onclick="addToCart()" accesskey="b" role="button" tabindex="0">
                         Add to Cart
-                    </button>
+                    </div>
                     
-                    <div id="cart-status" role="status" aria-live="polite" style="display: none; padding: 12px; border-radius: 8px; text-align: center; font-weight: 600; margin-top: 16px;"></div>
+                    <div id="cart-status" style="display: none; padding: 12px; border-radius: 8px; text-align: center; font-weight: 600; margin-top: 16px;"></div>
                 </div>
             </div>
         </section>

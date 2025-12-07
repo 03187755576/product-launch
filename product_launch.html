@@ -169,6 +169,7 @@
     </style>
     
     <script>
+
         function addToCart() {
             const cartStatus = document.getElementById('cart-status');
             cartStatus.textContent = "Item added to cart! Proceed to checkout.";
@@ -181,21 +182,18 @@
         function changeColor(colorName) {
             console.log("Color switched to: " + colorName);
             document.getElementById('product-image').src = `https://placehold.co/400x400/1e3a8a/f0f0f0?text=Product+${colorName.toUpperCase()}`;
-            document.getElementById('product-image').alt = `Product X smartwatch in ${colorName}`;
             document.getElementById('current-color').textContent = colorName;
         }
         
         window.onload = function() {
-            const nextProductBtn = document.getElementById('next-product-btn');
-            if (nextProductBtn) {
-                nextProductBtn.addEventListener('click', function() {
-                    alert('Viewing next product'); 
-                });
-            }
+            document.getElementById('next-product-span').addEventListener('click', function() {
+                alert('Viewing next product (non-focusable)'); 
+            });
         }
     </script>
 </head>
 <body>
+
 
     <header class="header">
         <div class="container flex-row-center">

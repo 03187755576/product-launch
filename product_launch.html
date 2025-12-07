@@ -244,34 +244,29 @@
                         <p>Experience the future on your wrist with the Product X Ultra. Featuring an all-day battery and advanced health monitoring.</p>
                     </div>
 
-                    <div>
-                        <label for="size-select" style="display: block; font-weight: 500; margin-bottom: 8px;">Watch Size</label>
-                        <select id="size-select" class="input-style" aria-label="Select watch size">
-                            <option value="">-- Select Size --</option>
-                            <option value="42mm">42mm (Standard)</option>
-                            <option value="46mm">46mm (Large)</option>
-                        </select>
+                    <div style="display: flex; align-items: center; gap: 0.5rem; padding-top: 1rem;">
+                        <label for="config-id">Hidden Configuration ID:</label>
+                        <input type="hidden" id="config-id" value="ZXU221">
                     </div>
+
+                    <select id="size-select" class="input-style">
+                        <option value="">-- Select Size --</option>
+                        <option value="42mm">42mm (Standard)</option>
+                        <option value="46mm">46mm (Large)</option>
+                    </select>
                     
-                    <div>
-                        <label for="quantity" style="display: block; font-weight: 500; margin-bottom: 8px;">Quantity (Required)</label>
-                        <input type="number" id="quantity" class="input-style" placeholder="Enter quantity" min="1" value="1" aria-required="true">
-                    </div>
+                    <input type="number" id="quantity" class="input-style" placeholder="Quantity (Required)" min="1" value="1">
 
-                    <fieldset style="border: none; padding: 0; margin: 0;">
-                        <legend style="font-weight: 500; margin-bottom: 0.5rem;">Strap Material</legend>
-                        <div style="display: flex; flex-direction: column; gap: 0.5rem;">
-                            <div style="display: flex; align-items: center; gap: 0.5rem;">
-                                <input type="radio" name="strap" id="strap-silicone" value="silicone" style="height: 16px; width: 16px; color: var(--brand-blue);">
-                                <label for="strap-silicone">Silicone Sport</label>
-                            </div>
+                    <div style="margin-top: 1rem; display: flex; flex-direction: column; gap: 0.5rem;">
+                        <p style="font-weight: 500;">Strap Material:</p>
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <input type="radio" name="strap" id="strap-silicone" value="silicone" style="height: 16px; width: 16px; color: var(--brand-blue);">
+                            <label for="strap-silicone">Silicone Sport</label>
 
-                            <div style="display: flex; align-items: center; gap: 0.5rem;">
-                                <input type="radio" name="strap" id="strap-leather" value="leather" style="height: 16px; width: 16px; color: var(--brand-blue);">
-                                <label for="strap-leather">Leather Classic</label>
-                            </div>
+                            <input type="radio" name="strap" id="strap-leather" value="leather" style="height: 16px; width: 16px; color: var(--brand-blue);">
+                            <span>Leather Classic</span>
                         </div>
-                    </fieldset>
+                    </div>
 
                     <button class="accessible-button" onclick="addToCart()" aria-label="Add product to shopping cart">
                         Add to Cart

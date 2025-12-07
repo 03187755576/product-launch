@@ -328,14 +328,14 @@
             </span>
         </section>
 
-        <section id="tech-specs" class="product-section" aria-labelledby="specs-title">
-            <h2 id="specs-title" style="font-size: 1.875rem; font-weight: 600; color: var(--brand-blue); margin-bottom: 1.5rem;">Technical Specifications</h2>
+        <section id="tech-specs" class="product-section">
+            <h3 style="font-size: 1.875rem; font-weight: 600; color: var(--brand-blue); margin-bottom: 1.5rem;">Technical Specifications</h3>
             
             <table style="width: 100%; text-align: left; border-collapse: collapse; border: 1px solid #e5e7eb;">
                 <thead>
                     <tr style="background-color: #f9fafb;">
-                        <th scope="col" style="border: 1px solid #e5e7eb; padding: 12px; font-weight: 500;">Feature</th>
-                        <th scope="col" style="border: 1px solid #e5e7eb; padding: 12px; font-weight: 500;">Detail</th>
+                        <th style="border: 1px solid #e5e7eb; padding: 12px; font-weight: 500;">Feature</th>
+                        <th style="border: 1px solid #e5e7eb; padding: 12px; font-weight: 500;">Detail</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -352,23 +352,25 @@
             
         </section>
         
-        <section id="promo" class="product-section" aria-labelledby="promo-title">
-            <h2 id="promo-title" style="font-size: 1.875rem; font-weight: 600; color: var(--brand-blue); margin-bottom: 1.5rem;">Product Unboxing</h2>
+        <section id="promo" class="product-section">
+            <h3 style="font-size: 1.875rem; font-weight: 600; color: var(--brand-blue); margin-bottom: 1.5rem;">Product Unboxing</h3>
 
-            <img src="https://placehold.co/400x100/1e3a8a/60a5fa?text=Limited+Time+Offer+-+Free+Shipping" alt="Limited time offer banner advertising free shipping" style="border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); margin-bottom: 1rem; width: 100%; height: auto;">
+            <img src="https://placehold.co/400x100/1e3a8a/60a5fa?text=Limited+Time+Offer+-+Free+Shipping" alt="" style="border-radius: 8px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1); margin-bottom: 1rem; width: 100%; height: auto;">
             
             <p style="font-size: 0.875rem; color: #6b7280; margin-bottom: 8px;">Watch a full product demonstration:</p>
-            <iframe width="100%" height="250" src="https://www.youtube.com/embed/S_T10uPq65g" title="Product X smartwatch unboxing and demonstration video" frameborder="0" allowfullscreen></iframe>
+            <iframe width="100%" height="250" src="https://www.youtube.com/embed/S_T10uPq65g" frameborder="0" allowfullscreen></iframe>
             
         </section>
         
-        <div style="display: flex; justify-content: center; align-items: center; padding-top: 24px; padding-bottom: 24px; gap: 1rem;">
-            <button aria-label="Enable notifications" style="background-color: #d1d5db; padding: 12px; border-radius: 9999px; border: none; cursor: pointer; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);" 
+        <div style="display: flex; justify-content: center; align-items: center; padding-top: 24px; padding-bottom: 24px;">
+            <button style="background-color: #d1d5db; padding: 12px; border-radius: 9999px; border: none; cursor: pointer; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);" 
                 onmouseover="this.style.backgroundColor='#9ca3af'" onmouseout="this.style.backgroundColor='#d1d5db'">
-                <span style="color: var(--dark-gray);" aria-hidden="true">&#128276;</span> 
+                <span style="color: var(--dark-gray);">&#128276;</span> 
             </button>
             
-            <p style="font-size: 0.875rem; font-weight: 600; margin: 0;">
+            <a href="#search" style="margin-left: 1rem; margin-right: 1rem; height: 10px; width: 10px;"></a>
+            
+            <p style="font-size: 0.875rem; font-weight: 600; margin-right: 1rem;">
                 &#128717; Free 30-Day Returns.
             </p>
         </div>
@@ -376,9 +378,9 @@
         <div style="text-align: center; margin-top: 24px;">
             <p style="font-size: 1.125rem; font-weight: 500; color: var(--brand-blue);">Need help?</p>
             
-            <button onclick="console.log('Email support clicked');" style="color: var(--brand-blue); text-decoration: underline; cursor: pointer; background: none; border: none; font-size: 1rem;">Email Customer Support</button>
+            <span onclick="console.log('Email support clicked');" style="color: var(--brand-blue); text-decoration: underline; cursor: pointer;">Email Customer Support</span>
             
-            <a href="#store-locator" style="margin-left: 1rem; color: var(--brand-blue); text-decoration: underline;">Find a Store</a>
+            <a style="margin-left: 1rem; color: var(--brand-blue); text-decoration: underline;">Find a Store</a>
         </div>
 
     </main>
@@ -388,12 +390,12 @@
             <p>&copy; 2025 Product Tech. All rights reserved.</p>
             
             <p style="font-size: 0.75rem; margin-top: 8px;">
-                Review our full policy. <a href="/warranty" target="_blank" style="color: var(--footer-text); text-decoration: underline;">More Details</a>.
+                Review our full policy. <a href="/warranty" target="_blank" style="color: #9ca3af; text-decoration: underline;">More Details</a>.
             </p>
 
             <div style="display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin-top: 8px;">
-                <input type="checkbox" id="terms-agree" name="terms-agree" style="height: 16px; width: 16px; color: var(--brand-blue); border-radius: 4px;">
-                <label for="terms-agree">I agree to the Terms of Service.</label>
+                <input type="checkbox" name="terms-agree" style="height: 16px; width: 16px; color: var(--brand-blue); border-radius: 4px;">
+                <span>I agree to the Terms of Service.</span>
             </div>
             
         </div>
